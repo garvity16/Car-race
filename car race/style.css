@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: fantasy;
+}
+.game {
+  background-image: url(background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+/*hides the panel that contains the*/
+.hide {
+  display: none;
+}
+.startScreen {
+  width: 500px; /*width of the set if instructions*/
+  height: 107px; /*heightof the set if instructions*/
+  line-height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  margin: auto;
+  background-color: rgb(192, 19, 19);
+  text-align: center;
+  border-bottom: 2px solid rgb(132, 197, 197);
+}
+.score,
+.highScore {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  text-align: center;
+  background-color: rgb(9, 230, 230);
+  width: 200px;
+  color: rgb(59, 40, 40);
+  line-height: 40px;
+  border-radius: 4px;
+  font-size: 1.2em;
+}
+/* when you move yout cursor to the click to start a pointer will appear */
+.ClickToStart {
+  cursor: pointer;
+}
+.gameArea {
+  /* height and wdith of rhe game area */
+  height: 100vh;
+  width: 400px;
+  margin: auto;
+  /* keeps them positioned at the center  */
+  position: relative;
+  background-color: rgb(32, 32, 32);
+  overflow: hidden;
+  border-left: 4px dashed white;
+  border-right: 4px dashed white;
+}
+/* players car  */
+.car {
+  background: url(car.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 75px;
+  width: 50px;
+  position: absolute;
+  top: 520px;
+}
+/* opponents car */
+.Opponents {
+  background: url(opponentcar.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 75px;
+  width: 50px;
+  position: absolute;
+  top: 520px;
+}
+.roadLines {
+  /* height and width of the road */
+  height: 100px;
+  width: 10px;
+  background-color: white;
+  position: absolute;
+  /* space from the left side */
+  margin-left: 195px;
+}
